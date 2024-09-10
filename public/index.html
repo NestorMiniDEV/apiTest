@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+
+    <!--daisyui framework-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div class="p-7 grid justify-center">
+        <h1 class="text-5xl m-4 pb-3"><strong>INICIAR SESIóN</strong></h1>
+        <hr>
+        <form action="/validar" method="get" class="text-lg">
+            <div class="py-4">
+                <label for="name" class="pe-2">Usuario :</label>
+                <input id="name" type="text" placeholder="ingrese su usuario" class="rounded p-1">
+            </div>
+
+            <div class="pb-4">
+                <label for="password" class="pe-2">Contraseña :</label>
+                <input id="password" type="password" placeholder="ingrese su contraseña" class="rounded p-1">
+            </div>
+
+
+            <input type="button" value="validar" class="btn btn-primary me-4">
+            <a href="signup.html" class="btn">registrarse</a>
+        </form>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
