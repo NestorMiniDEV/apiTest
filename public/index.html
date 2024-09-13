@@ -13,19 +13,19 @@
     <div class="p-7 grid justify-center">
         <h1 class="text-5xl m-4 pb-3"><strong>INICIAR SESIóN</strong></h1>
         <hr>
-        <form action="/validar" method="get" class="text-lg">
+        <form action="/verificar" method="post" class="text-lg">
             <div class="py-4">
                 <label for="name" class="pe-2">Usuario :</label>
-                <input id="name" type="text" placeholder="ingrese su usuario" class="rounded p-1">
+                <input id="name" name="name" type="text" placeholder="ingrese su usuario" class="rounded p-1">
             </div>
 
             <div class="pb-4">
                 <label for="password" class="pe-2">Contraseña :</label>
-                <input id="password" type="password" placeholder="ingrese su contraseña" class="rounded p-1">
+                <input id="password" name="password" type="password" placeholder="ingrese su contraseña" class="rounded p-1">
             </div>
 
+            <button class="btn btn-primary">validar</button>
 
-            <input type="button" value="validar" class="btn btn-primary me-4">
             <a href="signup.html" class="btn">registrarse</a>
         </form>
     </div>

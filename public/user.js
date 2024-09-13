@@ -30,12 +30,12 @@ userClass.pre("save", function(next){ //antes de que guarde
     }
 });
 
-userClass.methods.CorrectPassword = function(password, e){
-    bcrypt.compare(password, this.password, function(err, same){
+userClass.methods.correctPassword = function(password, callback){
+    return bcrypt.compare(password, this.password, function(err, same){
         if(err){
-            e(err);
+            callback(err);
         }else{
-            e(err, same);
+            callback(err, same);
         }
     });
 }
